@@ -17,7 +17,7 @@ function App() {
     <div className="container-fluid remove-padding">
       <Router>
         <Switch>
-          <Route path="/home" component={HomePage} />
+          <Route path="/search" component={HomePage} />
           <Route path="/details/:imdbID" component={DetailsPage} />
           <Route path="/" component={SearchPage} />
         </Switch>
