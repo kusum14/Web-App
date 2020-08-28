@@ -29,25 +29,25 @@ export default function DetailsPage() {
     return (
        <>
 
-<div class="row">
+<div className="row">
 
 
-      <div class="col-md-4">
+      <div className="col-md-4">
 
-        <img src={movieData.Poster} alt="Poster" class="img-thumbnail"/>
+        <img src={movieData.Poster} alt="Poster" className="img-thumbnail"/>
        </div> 
-        <div class="col-md-8">
+        <div className="col-md-8">
     <h3>{movieData.Title}</h3>
-    <ul class="list-group">
-    <li class="list-group-item"><strong>Genre : </strong>{movieData.Genre}</li>
-    <li class="list-group-item"><strong>Year : </strong>{movieData.Year}</li>
-    <li class="list-group-item"><strong>Rated : </strong>{movieData.Rated}</li>
-    <li class="list-group-item"><strong>Released : </strong>{movieData.Released}</li>
-    <li class="list-group-item"><strong>Runtime : </strong>{movieData.Runtime}</li>
-    <li class="list-group-item"><strong>Actors : </strong>{movieData.Actors}</li>
-    <li class="list-group-item"><strong>Type : </strong>{movieData.Type}</li>
-    <li class="list-group-item"><strong>Plot : </strong>{movieData.Plot}</li>
-    <li class="list-group-item"><strong>Ratings : </strong>{movieData.imdbRating}</li>
+    <ul className="list-group">
+    <li className="list-group-item"><strong>Genre : </strong>{movieData.Genre}</li>
+    <li className="list-group-item"><strong>Year : </strong>{movieData.Year}</li>
+    <li className="list-group-item"><strong>Rated : </strong>{movieData.Rated}</li>
+    <li className="list-group-item"><strong>Released : </strong>{movieData.Released}</li>
+    <li className="list-group-item"><strong>Runtime : </strong>{movieData.Runtime}</li>
+    <li className="list-group-item"><strong>Actors : </strong>{movieData.Actors}</li>
+    <li className="list-group-item"><strong>Type : </strong>{movieData.Type}</li>
+    <li className="list-group-item"><strong>Plot : </strong>{movieData.Plot}</li>
+    <li className="list-group-item"><strong>Ratings : </strong>{movieData.imdbRating}</li>
 
 
     </ul>
