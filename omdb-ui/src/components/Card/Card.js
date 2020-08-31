@@ -1,5 +1,6 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory} from 'react-router-dom';
+import './Styles.css';
 
 /**
  * useState(), useHistory() => Both are react hooks.
@@ -30,16 +31,19 @@ const Card = React.memo(props => {
   }
   
   return (
-    <div className="col-md-4">
+    <div className="col-md-4  ">
       <div className="card" style={{ width: '18rem', margin: 'auto' }}>
         <div className="bd-placeholder-img card-img-top" style={{ width: '18rem', height: '18rem', overflow: 'hidden' }}>
           <img src={movie.Poster} style={{ width: '18rem' }} alt="Poster" />
         </div>
-        <div className="card-body">
-          <h5 className="card-title">{movie.Title}</h5>
+        <div className="card-body bg-dark text-white">
+          <h5 className="card-title text-center">{movie.Title}</h5>
           <p className="card-text"> Year : {movie.Year} , Type: {movie.Type} </p>
-          <button className="btn btn-primary" onClick={viewButtonClick}>View</button>
-        </div>
+          <button className="btn btn-primary " onClick={viewButtonClick}>Movie Details
+</button>
+          
+         
+</div>
       </div>
       <br />
     </div>

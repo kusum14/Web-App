@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink, useParams} from 'react-router-dom';
 import { baseUrl, axiosHeaders } from '../../utils/constants';
 import axios from 'axios';
+import './Details.css';
 
 export default function DetailsPage() {
     const params = useParams();
@@ -27,35 +28,56 @@ export default function DetailsPage() {
      * const imdbID = params.imdbID;
      */
     return (
-       <>
-
-<div className="row">
-
-
-      <div className="col-md-4">
-
-        <img src={movieData.Poster} alt="Poster" className="img-thumbnail"/>
-       </div> 
-        <div className="col-md-8">
-    <h3>{movieData.Title}</h3>
-    <ul className="list-group">
-    <li className="list-group-item"><strong>Genre : </strong>{movieData.Genre}</li>
-    <li className="list-group-item"><strong>Year : </strong>{movieData.Year}</li>
-    <li className="list-group-item"><strong>Rated : </strong>{movieData.Rated}</li>
-    <li className="list-group-item"><strong>Released : </strong>{movieData.Released}</li>
-    <li className="list-group-item"><strong>Runtime : </strong>{movieData.Runtime}</li>
-    <li className="list-group-item"><strong>Actors : </strong>{movieData.Actors}</li>
-    <li className="list-group-item"><strong>Type : </strong>{movieData.Type}</li>
-    <li className="list-group-item"><strong>Plot : </strong>{movieData.Plot}</li>
-    <li className="list-group-item"><strong>Ratings : </strong>{movieData.imdbRating}</li>
-
-
-    </ul>
+       <><body>
+<h2 className="mb-4">{movieData.Title}</h2>       
+               <p> {movieData.Plot}</p>
+               <hr/>
+       <div className="row">
+       
+           <div className="col-md-4 text-center">
+               <img src={movieData.Poster} className="thumbnail" id="center" alt="Poster"/>
            </div>
-            </div>
+           <div className="col-md-4">
+           
+              
+               <ul className="list-group">
+                   <li className="list-group-item"><strong>Genre : </strong>{movieData.Genre}</li>
+                   <li className="list-group-item"><strong>Year : </strong>{movieData.Year}</li>
+                   <li className="list-group-item"><strong>IMDB Rating : </strong>{movieData.imdbRating}</li>
+                   <li className="list-group-item"><strong>Rated : </strong>{movieData.Rated}</li>
 
-            <NavLink to="/Search"> Homepage </NavLink>
+                   <li className="list-group-item"><strong>Released : </strong>{movieData.Released}</li>
+                   <li className="list-group-item"><strong>Country : </strong>{movieData.Country}</li>
 
+                   <li className="list-group-item"><strong>Runtime : </strong>{movieData.Runtime}</li>
+                   </ul>
+                   </div>
+
+                   <div className="col-md-4 ">
+                   <ul className="list-group">
+
+
+                   <li className="list-group-item"><strong>Actors : </strong>{movieData.Actors}</li>
+                   <li className="list-group-item"><strong>Director : </strong>{movieData.Director}</li>
+                   <li className="list-group-item"><strong>Writer : </strong>{movieData.Writer}</li>
+                   
+                   <li className="list-group-item"><strong>Awards : </strong>{movieData.Awards}</li>
+                   <li className="list-group-item"><strong>Box Office : </strong>{movieData.BoxOffice}</li>
+                   
+               </ul>
+
+
+           </div>
+
+       </div>
+       <hr/>
+
+       <NavLink to="/" className="btn btn-default text-dark"> Homepage </NavLink>
+
+       <hr/>
+
+       </body>
+       
 </>
 
        

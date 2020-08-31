@@ -1,0 +1,48 @@
+/*
+font
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+.row{
+    font-family : 'Lato',sans-serif;
+}
+
+#center {
+
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border: 5px solid;
+  }
+
+
+h2{
+    text-align : center;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    letter-spacing: 0.2rem;
+}
+
+strong{
+    font-family: Tahoma, sans-serif,cursive;
+
+}
+
+p{
+    margin-bottom: 1.25rem;
+    line-height: 2;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-align:center;
+    font-family : 'Lato',sans-serif;
+}
+
+
+ul{
+    font-family : 'Lato',sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+
+
+
+
